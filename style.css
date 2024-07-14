@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
+/* header banner start here */
+.header-container{
+    max-width: 1350px;
+    height: 631px;
+    background: rgba(255, 144, 14, 0.1);
+}
+/* share items style here */
+.display-flex{
+    display: flex;
+}
+.banner-title{
+    width: 550px;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+.title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgb(19, 19, 19);
+    margin-bottom: 5px;
+}
+.text{
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: rgb(114, 114, 114);
+    margin-bottom: 5px;
+}
+.btn{
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: wheat;
+    border: none;
+}
+.banner-image{
+    width: 800px;
+    height: 390px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.banner-image img{
+    width: 100%;
+}
+/* share items style end here */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px 0 120px;;
+    align-items: center;
+}
+nav a{
+    margin-right: 50px;
+}
+nav ul li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+}
+/* header banner end here */
+
+/* media query style */
+@media screen and (max-width: 576px) {
+    .header-container, .banner-title, .banner-image{
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        padding: 10px 30px 20px 40px;
+    }
+    nav a{
+        margin-right: 20px;
+    }
+    .banner-image{
+        margin-top: 10px;
+    }
+}
