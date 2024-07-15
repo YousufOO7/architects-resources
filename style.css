@@ -42,7 +42,7 @@ body{
     height: 40px;
     border-radius: 8px;
     background: rgb(255, 144, 14);
-    color: wheat;
+    color: #FFFFFF;
     border: none;
 }
 .banner-image{
@@ -104,17 +104,71 @@ nav li a{
 }
 /* features section end here */
 
-
-
-
-
-
-
-
+/* features love and enjoy section start here */
+.features-love-container{
+    max-width: 1000px;
+    height: 631px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.features-love-title{
+    width: 500px;
+}
+.features-love-content{
+    display: flex;
+    gap: 100px;
+}
+.features-love{
+    padding-left: 10px;
+    border-left: 2px solid #FF900E;
+}
+.feature-image{
+    width: 390px;
+    height: 580px;
+}
+.feature-image img{
+    width: 100%;
+    height: 100%;
+}
+.div{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+.div-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(19, 19, 19);
+    margin-bottom: 5px;
+}
+.div-text{
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: rgb(114, 114, 114);
+    margin-bottom: 5px;
+}
+.feature-btn{
+    width: 142px;
+    height: 80px;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: #FFFFFF;
+    margin-top: -80px;
+    margin-left: -80px;
+    border: none;
+}
+.btn-span{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+/* features love and enjoy section end here */
 
 /* media query style */
 @media screen and (max-width: 576px) {
-    .header-container, .banner-title, .banner-image, .features-container{
+    .header-container, .banner-title, .banner-image, .features-container, .features-love-container{
         width: 100%;
     }
     .header-container{
@@ -134,8 +188,12 @@ nav li a{
     .features-container{
         margin-top: 0;
     }
-    .features-content{
+    .features-content, .features-love-content
+    {
         flex-direction: column;
+    }
+    .features-love-container{
+        margin-top: 850px;
     }
     .features-title{
         text-align: center;
@@ -143,4 +201,18 @@ nav li a{
     .features-image{
         grid-template-columns: 1fr;
     }
+    .features-love-content{
+        gap: 0;
+    }
+    .feature-image{
+       margin-top: 10px;
+    }
+     
+     .features-love-title{
+        width: 100%;
+     }
+    .feature-btn{
+        margin-left: 0;
+    }
+    
 }
