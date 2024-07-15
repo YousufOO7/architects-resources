@@ -212,9 +212,21 @@ nav li a{
 .our-sponspors-image img{
     filter:  grayscale(100%);
 }
+/* our sponspors section end here */
 
-
-
+/* footer section start here */
+.footer{
+    width: 1000px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+}
+.footer-text{
+    justify-content: center;
+    text-align: center;
+    padding-top: 8px;
+}
 
 /* media query style */
 @media screen and (max-width: 576px) {
@@ -224,7 +236,8 @@ nav li a{
     .features-container,
     .features-love-container,
     .some-facts-container,
-    .our-sponspors-container{
+    .our-sponspors-container,
+    .footer{
         width: 100%;
     }
     .header-container{
@@ -283,5 +296,7 @@ nav li a{
     .our-sponspors-container{
         margin-top: 350px;
     }
-    
+    .footer{
+        margin-top: 300px;
+    }
 }
