@@ -166,9 +166,39 @@ nav li a{
 }
 /* features love and enjoy section end here */
 
+/* Some facts section start here */
+.some-facts-container{
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.some-facts-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.box{
+    width: 140px;
+    height: 140px;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+
+}
+.box-item{
+    margin: 20px;
+    text-align: center;
+}
+/* Some facts section end here */
+
+
+
+
 /* media query style */
 @media screen and (max-width: 576px) {
-    .header-container, .banner-title, .banner-image, .features-container, .features-love-container{
+    .header-container, .banner-title, .banner-image, .features-container, .features-love-container, .some-facts-container{
         width: 100%;
     }
     .header-container{
@@ -198,7 +228,7 @@ nav li a{
     .features-title{
         text-align: center;
     }
-    .features-image{
+    .features-image, .some-facts-box{
         grid-template-columns: 1fr;
     }
     .features-love-content{
@@ -213,6 +243,16 @@ nav li a{
      }
     .feature-btn{
         margin-left: 0;
+    }
+    .some-facts-container{
+        margin-top: 650px;
+    }
+    .some-facts-box{
+        margin-top: 20px;
+        gap: 5px;
+    }
+    .box{
+        margin: 0 auto;
     }
     
 }
